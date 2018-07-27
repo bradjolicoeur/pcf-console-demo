@@ -1,6 +1,8 @@
 ﻿---
 applications:
 - name: pcf-console-demo
-  disk_quota: 512M
+  disk_quota: 128M
+  no-route: true
+  health-check-type: process
   buildpack: https://github.com/cloudfoundry/dotnet-core-buildpack
   services:
